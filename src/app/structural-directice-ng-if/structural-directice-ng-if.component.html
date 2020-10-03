@@ -1,0 +1,22 @@
+<p>structural-directice-ng-if works!</p>
+
+<!-- <h2 *ngIf="isTrue; else elseBlock">
+    ngIf Example
+</h2> -->
+
+<div *ngIf="isTrue; then thenBlock; else elseBlock"></div>
+
+<ng-template #thenBlock>
+    <h2>
+        This is Then Block.
+    </h2>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h2>
+        This is else Block.
+    </h2>
+</ng-template>
+
+
+
